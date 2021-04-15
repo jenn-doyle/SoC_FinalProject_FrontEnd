@@ -6,7 +6,7 @@ import dateFormat from "dateformat";
 function useFetch() {
   const { dispatch, refreshSwitch, state } = UseAppContext();
 
-  const BACK_END = "http://localhost:5000";
+  const BACK_END = "https://homelearn-hut.herokuapp.com";
   const GET_PUPILS = "Homework";
 
   useEffect(() => {

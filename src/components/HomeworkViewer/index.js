@@ -26,7 +26,7 @@ function HomeworkViewer() {
     }
   }, [state.childIndex]);
 
-  const BACKEND_URL = "http://localhost:5000";
+  const BACKEND_URL = "https://homelearn-hut.herokuapp.com";
 
   async function rejectWork() {
     // Create our object to PUT (Update) into childrenshomework on SQL

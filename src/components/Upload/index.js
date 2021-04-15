@@ -10,7 +10,7 @@ const Upload = ({ hideModal }) => {
   const [comment, setComment] = useState("");
   const [dateDue, setDateDue] = useState("");
 
-  const BACKEND_URL = "http://localhost:5000";
+  const BACKEND_URL = "https://homelearn-hut.herokuapp.com";
 
   const { refreshSwitch, setRefreshSwitch } = UseAppContext();
 
