@@ -10,7 +10,7 @@ const Upload = ({ hideModal }) => {
   const [comment, setComment] = useState("");
   const [dateDue, setDateDue] = useState("");
 
-  const BACKEND_URL = "https://homelearn-hut.herokuapp.com";
+  const BACKEND_URL = "http://localhost:5000";
 
   const { refreshSwitch, setRefreshSwitch } = UseAppContext();
 
@@ -35,7 +35,6 @@ const Upload = ({ hideModal }) => {
       .catch((err) => {
         alert(err);
       });
-    setRefreshSwitch(!refreshSwitch);
     hideModal();
   };
 
@@ -59,6 +58,7 @@ const Upload = ({ hideModal }) => {
       headers: { "content-type": "application/json" },
       body: JSON.stringify(body),
     });
+    setRefreshSwitch(!refreshSwitch);
   }
   // end upload to SQL
 
