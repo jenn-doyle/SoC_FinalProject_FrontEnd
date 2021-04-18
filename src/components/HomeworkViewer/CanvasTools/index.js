@@ -17,12 +17,12 @@ function CanvasTools({ childHomework, saveableCanvas }) {
     <>
       <div className={css.tools}>
         <div
-          onClick={(e) => setCustomColor("#FF00FF")}
+          onClick={() => setCustomColor("#FF00FF")}
           className={css.colorField}
           style={{ backgroundColor: "magenta" }}
         ></div>
         <div
-          onClick={(e) => setCustomColor("#66ff00")}
+          onClick={() => setCustomColor("#66ff00")}
           className={css.colorField}
           style={{ backgroundColor: "rgb(75, 235, 65)" }}
         ></div>
